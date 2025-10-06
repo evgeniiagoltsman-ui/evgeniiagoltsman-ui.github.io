@@ -3,95 +3,175 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>IMMUNO LAB — Innovative Immunology Startup</title>
-  <meta name="description" content="A demo environment for testing backup and restore solutions (Microsoft 365, Azure, Google Workspace).">
+  <title>IMMUNO LAB — Innovative Immunology Startup</title>
+  <meta name="description" content="IMMUNO LAB develops new laboratory and instrumental diagnostic methods for patients with allergic and immunological disorders.">
   <style>
-    :root{
-      --bg:#0b1220;--card:#0f172a;--muted:#94a3b8;
-      --text:#e2e8f0;--accent:#60a5fa;--accent2:#a78bfa;
+    :root {
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --accent: #0284c7;
+      --accent2: #06b6d4;
+      --muted: #475569;
+      --card: #ffffff;
     }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;
-      background:radial-gradient(1000px 600px at 70% -10%,rgba(96,165,250,.15),transparent),
-      radial-gradient(1000px 600px at 10% 110%,rgba(167,139,250,.15),transparent),
-      var(--bg);color:var(--text)}
-    a{color:var(--accent);text-decoration:none}
-    .container{max-width:1000px;margin:0 auto;padding:24px}
-    header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:40px;height:40px;border-radius:10px;
-      display:grid;place-items:center;
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-      font-weight:700;color:white}
-    nav{display:flex;gap:16px}
-    nav a{opacity:.9;font-weight:600}
-    nav a:hover{opacity:1}
-    .hero{margin-top:60px;text-align:center}
-    .hero h1{font-size:40px;margin-bottom:10px}
-    .hero p{color:var(--muted);font-size:18px;margin-bottom:24px}
-    .btn{display:inline-block;padding:12px 22px;border-radius:12px;
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-      color:white;font-weight:600}
-    section{margin-top:60px}
-    h2{color:var(--accent);margin-bottom:16px}
-    ul{color:var(--muted);list-style:square;padding-left:20px}
-    .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-      border-radius:16px;padding:20px;margin-bottom:16px}
-    footer{text-align:center;margin-top:80px;color:var(--muted);font-size:14px}
-    @media(max-width:700px){.hero h1{font-size:28px}}
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      padding: 16px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--accent);
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 40px;
+      background: linear-gradient(135deg, #e0f2fe, #ccfbf1);
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero h1 {
+      font-size: 42px;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+    }
+    .hero img {
+      width: 420px;
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.1);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: var(--accent);
+      margin-bottom: 12px;
+      font-size: 28px;
+    }
+    p {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    ul {
+      color: var(--muted);
+      list-style: square;
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      margin-bottom: 16px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      color: var(--muted);
+      font-size: 14px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,.05);
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">DL</div>
-        <h3>IMMUNO LAB</h3>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#workloads">Workloads</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header>
+    <div class="brand">IMMUNO LAB</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section class="hero">
-  <h1>Innovative Immunology Research</h1>
-  <p>IMMUNO LAB is a startup focused on developing and validating new types of laboratory and instrumental diagnostics for patients with allergic and immunological disorders.</p>
-  <a class="btn" href="#about">Learn more</a>
-</section>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Innovative Immunology Research</h1>
+      <p>We are a startup focused on developing and validating new types of laboratory and instrumental diagnostics for patients with allergic and immunological disorders.</p>
+      <a class="btn" href="#about">Learn More</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1581092334425-1e7a9c7a94e2?auto=format&fit=crop&w=900&q=60" alt="Laboratory">
+  </section>
 
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="card">
+      <p>IMMUNO LAB brings together medical scientists and engineers to explore new frontiers in immunological diagnostics. Our goal is to translate cutting-edge research into accessible laboratory and instrumental tests that improve early detection, treatment, and monitoring of immune-related diseases.</p>
+    </div>
+  </section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <div class="card">
-    <p>Our mission is to advance the field of clinical immunology by designing innovative diagnostic methods and tools. We collaborate with medical laboratories, researchers, and biotech partners to translate scientific discoveries into practical tests that improve patient outcomes.</p>
-  </div>
-</section>
+  <section id="research">
+    <h2>Research Areas</h2>
+    <div class="card">
+      <ul>
+        <li>Allergy diagnostics — exploring mechanisms of hypersensitivity</li>
+        <li>Autoimmune biomarkers — identifying patterns of immune dysregulation</li>
+        <li>Microbiome and immune response — studying the connection between gut flora and immunity</li>
+        <li>Novel laboratory and instrumental methods — from prototype to clinical validation</li>
+      </ul>
+    </div>
+  </section>
 
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:info@immunolab.example.com">info@immunolab.example.com</a></p>
+      <p><small>For scientific collaboration, partnerships, or pilot diagnostics projects, please get in touch with our team.</small></p>
+    </div>
+  </section>
 
-    <section id="workloads">
-<section id="workloads">
-  <h2>Research Areas</h2>
-  <div class="card">
-    <ul>
-      <li>Allergy diagnostics — identifying immune hypersensitivity mechanisms</li>
-      <li>Autoimmune biomarkers — exploring immune dysregulation patterns</li>
-      <li>Microbiome and immune response — studying the interplay between gut flora and immunity</li>
-      <li>Novel laboratory and instrumental tests — from concept to validation</li>
-    </ul>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: <a href="mailto:info@immunolab.example.com">info@immunolab.example.com</a></p>
-    <p><small>For scientific collaboration, partnerships, or pilot diagnostics projects, please get in touch.</small></p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 IMMUNO LAB — Innovative Immunology Startup. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>© 2025 IMMUNO LAB — Innovative Immunology Startup. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
