@@ -1,12 +1,97 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Мой первый сайт</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ACME Backup Lab — Demo Environment</title>
+  <meta name="description" content="A demo environment for testing backup and restore solutions (Microsoft 365, Azure, Google Workspace).">
+  <style>
+    :root{
+      --bg:#0b1220;--card:#0f172a;--muted:#94a3b8;
+      --text:#e2e8f0;--accent:#60a5fa;--accent2:#a78bfa;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;
+      background:radial-gradient(1000px 600px at 70% -10%,rgba(96,165,250,.15),transparent),
+      radial-gradient(1000px 600px at 10% 110%,rgba(167,139,250,.15),transparent),
+      var(--bg);color:var(--text)}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:40px;height:40px;border-radius:10px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      font-weight:700;color:white}
+    nav{display:flex;gap:16px}
+    nav a{opacity:.9;font-weight:600}
+    nav a:hover{opacity:1}
+    .hero{margin-top:60px;text-align:center}
+    .hero h1{font-size:40px;margin-bottom:10px}
+    .hero p{color:var(--muted);font-size:18px;margin-bottom:24px}
+    .btn{display:inline-block;padding:12px 22px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:white;font-weight:600}
+    section{margin-top:60px}
+    h2{color:var(--accent);margin-bottom:16px}
+    ul{color:var(--muted);list-style:square;padding-left:20px}
+    .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;padding:20px;margin-bottom:16px}
+    footer{text-align:center;margin-top:80px;color:var(--muted);font-size:14px}
+    @media(max-width:700px){.hero h1{font-size:28px}}
+  </style>
 </head>
-<body style="font-family:Arial;text-align:center;margin-top:50px">
-  <h1>Привет! 🎉</h1>
-  <p>Это мой тестовый сайт на GitHub Pages.</p>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DL</div>
+        <h3>ACME Backup Lab</h3>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#workloads">Workloads</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Demo Backup Environment</h1>
+      <p>This is a non-production lab used to test backup and restore workflows for Microsoft 365, Azure, and Google Workspace.</p>
+      <a class="btn" href="#contact">Request a POC / Trial</a>
+    </section>
+
+    <section id="about">
+      <h2>About the Lab</h2>
+      <div class="card">
+        <p>ACME Backup Lab is a <strong>demo company</strong> created to evaluate backup and restore products.
+        All users, data, and resources are synthetic — no real customer information is used.</p>
+      </div>
+    </section>
+
+    <section id="workloads">
+      <h2>Workloads Covered</h2>
+      <div class="card">
+        <ul>
+          <li>Microsoft 365 — Exchange, SharePoint, OneDrive, Teams</li>
+          <li>Azure — Virtual Machines, SQL, File Shares</li>
+          <li>Google Workspace — Gmail, Drive</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:demo.acme@yourdevtenant.onmicrosoft.com">demo.acme@yourdevtenant.onmicrosoft.com</a></p>
+        <p><small>Note: This is a demo tenant used only for testing backup integrations.</small></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 ACME Backup Lab — Demo Environment. All data is synthetic.</p>
+    </footer>
+  </div>
 </body>
 </html>
+
