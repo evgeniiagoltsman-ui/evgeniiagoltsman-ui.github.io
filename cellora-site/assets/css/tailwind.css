@@ -7,3 +7,22 @@
   .btn-secondary { @apply inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-5 py-2.5 font-semibold text-slate-700 shadow-sm hover:bg-slate-50; }
   .badge { @apply inline-flex items-center rounded-full bg-emerald-50 text-emerald-700 px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ring-emerald-200; }
 }
+
+/* Responsive image styles */
+.section-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hero/banner image containers */
+.hero-image {
+  max-height: 520px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    max-height: 400px;
+  }
+}
