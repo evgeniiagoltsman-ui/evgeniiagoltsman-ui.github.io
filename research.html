@@ -1,236 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Research — Cellora</title>
-    <link rel="stylesheet" href="assets/css/styles.css"/>
-    <style>
-        body {
-            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Cellora</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 </head>
-<body class="text-slate-900 bg-white">
-    <!-- Header -->
-    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex h-16 items-center justify-between">
-                <a href="index.html" class="flex items-center gap-2">
-                    <div class="w-6 h-6 bg-slate-900 rounded-sm flex items-center justify-center">
-                        <div class="w-3 h-3 bg-white rounded-sm"></div>
-                    </div>
-                    <span class="text-2xl font-semibold">Cellora</span>
-                </a>
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="about.html" class="text-slate-700 hover:text-brand">About</a>
-                    <a href="research.html" class="text-slate-900">Research</a>
-                    <a href="ai.html" class="text-slate-700 hover:text-brand">AI</a>
-                    <a href="contact.html" class="text-slate-700 hover:text-brand">Contact</a>
-                </nav>
-                <div class="hidden md:flex items-center gap-3">
-                    <a href="contact.html" class="btn-primary">Contact Us</a>
-                </div>
-                <button id="menuButton" class="md:hidden inline-flex items-center rounded-md p-2 text-slate-600 hover:bg-slate-100" aria-label="Open Menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/>
-                    </svg>
-                </button>
-            </div>
+<body class="antialiased text-slate-800">
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <div class="mx-auto max-w-6xl px-6 md:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="font-bold text-xl">Cellora</a>
+        <nav class="hidden md:flex items-center gap-8 text-slate-600">
+          <a href="about.html" class="hover:text-slate-900 transition">About</a>
+          <a href="research.html" class="text-slate-900 font-medium transition">Research</a>
+          <a href="ai.html" class="hover:text-slate-900 transition">AI</a>
+          <a href="contact.html" class="hover:text-slate-900 transition">Contact</a>
+        </nav>
+        <a href="contact.html" class="inline-flex items-center rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-600/50 transition">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-6 md:px-8">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-slate-800 text-center md:text-left mb-8">
+        Pioneering Research in Immunological Health
+      </h1>
+    </div>
+  </section>
+
+  <!-- Research Cards -->
+  <section class="py-14 pt-0">
+    <div class="mx-auto max-w-6xl px-6 md:px-8">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Card 1: Rare Immunological Disorders -->
+        <div class="rounded-xl border border-gray-200 bg-white p-5 hover:shadow-sm transition">
+          <svg aria-hidden="true" class="h-6 w-6 text-teal-600 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 16a9.065 9.065 0 0 1-6.23-.693L5 15.3m14.8 0 .438 1.106c.1.251.154.52.154.791a3.75 3.75 0 0 1-3.75 3.75H7.358a3.75 3.75 0 0 1-3.75-3.75c0-.271.055-.54.154-.791L4.2 15.3" />
+          </svg>
+          <h2 class="font-bold text-lg mb-3">Rare Immunological Disorders</h2>
+          <p class="text-slate-600 text-sm mb-4">
+            Targeting the most challenging immunological conditions, we leverage AI to identify subtle genetic and proteomic signatures that elude conventional diagnostics. Our research focuses on uncovering underlying mechanisms for personalized therapeutic interventions.
+          </p>
+          <h3 class="font-bold text-sm mb-3">Key Mechanisms:</h3>
+          <ul class="space-y-2.5 mb-4">
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Genomic sequencing for novel mutation discovery.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Proteomic analysis of immune cell subsets.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Single-cell transcriptomics to map disease progression.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Deep phenotyping via advanced imaging techniques.</span>
+            </li>
+          </ul>
         </div>
-        <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
-            <div class="mx-auto max-w-7xl px-4 py-3 space-y-2">
-                <a href="about.html" class="block py-2 text-slate-700 hover:text-brand">About</a>
-                <a href="research.html" class="block py-2 text-slate-900">Research</a>
-                <a href="ai.html" class="block py-2 text-slate-700 hover:text-brand">AI</a>
-                <a href="contact.html" class="block py-2 text-slate-700 hover:text-brand">Contact</a>
-            </div>
+
+        <!-- Card 2: Autoimmune Diseases -->
+        <div class="rounded-xl border border-gray-200 bg-white p-5 hover:shadow-sm transition">
+          <svg aria-hidden="true" class="h-6 w-6 text-teal-600 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+          </svg>
+          <h2 class="font-bold text-lg mb-3">Autoimmune Diseases</h2>
+          <p class="text-slate-600 text-sm mb-4">
+            Unraveling the complexities of autoimmune pathogenesis, Cellora employs AI to discern patterns in immune dysregulation, T-cell repertoire shifts, and B-cell responses. Our goal is to predict disease flares and guide targeted immunomodulation.
+          </p>
+          <h3 class="font-bold text-sm mb-3">Key Mechanisms:</h3>
+          <ul class="space-y-2.5 mb-4">
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Identification of pathogenic autoantibody profiles.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Characterization of immune checkpoint dysregulation.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Analysis of microbiome-immune system interactions.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Investigation of cellular senescence in inflammation.</span>
+            </li>
+          </ul>
         </div>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="py-16 lg:py-20">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-center">Pioneering Research in Immunological Health</h1>
-                <div class="mt-8">
-                    <img class="w-full rounded-xl shadow-lg hero-image" alt="Cellora — research page layout (Visily screenshot)" src="assets/screens/research.jpg"/>
-                </div>
-            </div>
-        </section>
-
-        <!-- Research Focus Areas -->
-        <section class="pb-8">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold">Rare Immunological Disorders</h3>
-                        <p class="mt-4 text-slate-600">
-                            Leveraging AI to identify genetic and proteomic signatures for personalized therapeutic interventions.
-                        </p>
-                        <div class="mt-6">
-                            <h4 class="font-semibold text-slate-900 mb-3">Key Mechanisms:</h4>
-                            <ul class="space-y-2 text-slate-600">
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Genomic sequencing for novel mutation discovery.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Proteomic analysis of immune cell subsets.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Single-cell transcriptomics to map disease progression.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Deep phenotyping via advanced imaging techniques.
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="#" class="mt-6 inline-flex items-center text-brand font-semibold hover:underline">
-                            Explore Selected Methods
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold">Autoimmune Diseases</h3>
-                        <p class="mt-4 text-slate-600">
-                            Using AI to discern patterns in immune dysregulation, T-cell repertoire shifts, and B-cell responses to predict disease flares and guide immunomodulation.
-                        </p>
-                        <div class="mt-6">
-                            <h4 class="font-semibold text-slate-900 mb-3">Key Mechanisms:</h4>
-                            <ul class="space-y-2 text-slate-600">
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Identification of pathogenic autoantibody profiles.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Characterization of immune checkpoint dysregulation.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Analysis of microbiome-immune system interactions.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Investigation of cellular senescence in inflammation.
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="#" class="mt-6 inline-flex items-center text-brand font-semibold hover:underline">
-                            Explore Selected Methods
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold">Allergy Mechanisms</h3>
-                        <p class="mt-4 text-slate-600">
-                            Dissecting IgE-mediated pathways, mast cell activation, and eosinophilic inflammation to identify novel targets for allergy prevention and management.
-                        </p>
-                        <div class="mt-6">
-                            <h4 class="font-semibold text-slate-900 mb-3">Key Mechanisms:</h4>
-                            <ul class="space-y-2 text-slate-600">
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Mapping allergen-specific IgE responses.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Elucidating mast cell activation and degranulation pathways.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Characterizing epithelial barrier dysfunction.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    Understanding inflammatory cytokine networks in allergic responses.
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="#" class="mt-6 inline-flex items-center text-brand font-semibold hover:underline">
-                            Explore Selected Methods
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ethical AI Section -->
-        <section class="py-16 bg-slate-50">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="rounded-xl bg-white p-10 text-center border border-slate-200 shadow-sm">
-                    <h3 class="text-3xl font-bold">Driving Innovation with Ethical AI</h3>
-                    <p class="mt-4 text-lg text-slate-600">
-                        We integrate stringent ethical guidelines and human-in-the-loop validation into every stage of our research process.
-                    </p>
-                    <a href="ai.html" class="mt-8 inline-flex btn-primary">Learn More About Our AI Methodology</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="mt-24 border-t border-slate-200">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                <p class="text-slate-500">Company · Legal · Connect</p>
-                <p class="text-slate-400 text-sm">Made with <span class="font-semibold text-purple-600">Visily</span></p>
-            </div>
+        <!-- Card 3: Allergy Mechanisms -->
+        <div class="rounded-xl border border-gray-200 bg-white p-5 hover:shadow-sm transition">
+          <svg aria-hidden="true" class="h-6 w-6 text-teal-600 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+          </svg>
+          <h2 class="font-bold text-lg mb-3">Allergy Mechanisms</h2>
+          <p class="text-slate-600 text-sm mb-4">
+            Addressing the growing global burden of allergies, our research uses AI to dissect IgE-mediated pathways, mast cell activation, and eosinophilic inflammation. We aim to identify novel targets for prevention and more effective management of allergic reactions.
+          </p>
+          <h3 class="font-bold text-sm mb-3">Key Mechanisms:</h3>
+          <ul class="space-y-2.5 mb-4">
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Mapping allergen-specific IgE responses.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Elucidating mast cell activation and degranulation pathways.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Characterizing epithelial barrier dysfunction.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg aria-hidden="true" class="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <span class="text-slate-600 text-sm">Understanding inflammatory cytokine networks in allergic responses.</span>
+            </li>
+          </ul>
         </div>
-    </footer>
 
-    <script src="assets/js/main.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Innovation Callout -->
+  <section class="py-14">
+    <div class="mx-auto max-w-6xl px-6 md:px-8">
+      <div class="rounded-xl border border-gray-200 bg-slate-50 p-8 md:p-10 text-center">
+        <h2 class="font-semibold text-2xl md:text-3xl mb-4">Driving Innovation with Ethical AI</h2>
+        <p class="text-slate-600 max-w-3xl mx-auto mb-6">
+          At Cellora, our commitment extends beyond scientific discovery to responsible innovation. We integrate stringent ethical guidelines and human-in-the-loop validation into every stage of our AI-assisted research, ensuring trustworthy and impactful diagnostics.
+        </p>
+        <a href="ai.html" class="inline-flex items-center rounded-md bg-teal-600 px-5 py-2.5 text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-600/50 transition">
+          Learn More About Our AI Methodology
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 py-8">
+    <div class="mx-auto max-w-6xl px-6 md:px-8">
+      <p class="text-sm text-slate-600 text-center">© Cellora — Research & Diagnostics</p>
+    </div>
+  </footer>
+
 </body>
 </html>
